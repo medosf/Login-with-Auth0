@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/github.io/Login-with-Auth0/static/css/main.1e82760c.css",
+    "main.js": "/github.io/Login-with-Auth0/static/js/main.205c73c8.js",
+    "index.html": "/github.io/Login-with-Auth0/index.html",
+    "main.1e82760c.css.map": "/github.io/Login-with-Auth0/static/css/main.1e82760c.css.map",
+    "main.205c73c8.js.map": "/github.io/Login-with-Auth0/static/js/main.205c73c8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e82760c.css",
+    "static/js/main.205c73c8.js"
+  ]
+}
