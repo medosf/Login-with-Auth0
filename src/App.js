@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import LoginButton from "./componenets/LoginButton";
+import LogOutButton from "./componenets/LogOutButton";
+import Profile from "./componenets/Profile";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
+  const { isLoading, error } = useAuth0();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="App">
+      <h1>Auth0 Login</h1>
+      <LoginButton />
+      <LogOutButton />
+      {error && <p>Please try again</p>}
+      {!error && isLoading && <p>...loading</p>}
+      <Profile />
+    </main>
   );
 }
 
